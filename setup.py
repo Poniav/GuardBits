@@ -47,7 +47,7 @@ setup(
               'GuardBits/tests'],
     description='Guard application to store confidential datas',
     long_description=readme,
-    url='https://github.com/Poniav/GuardBits',
+    url='https://github.com/Poniav/GuardBits.git',
     entry_points={
         'console_scripts': [
             # 'some.module:some_function',
