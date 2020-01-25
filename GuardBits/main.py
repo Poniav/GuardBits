@@ -1,3 +1,6 @@
+#! /usr/bin/env python3
+# coding: utf-8
+
 import os
 import math
 
@@ -7,24 +10,23 @@ from PyQt5.QtWidgets import (QApplication,QMainWindow)
 
 #from PyQt5.QtCore import Qt, QObject, QPoint, QRectF, QPointF, QSize
 
-#from ressources.ui import Ui_Fic
+from src.ui.guard import Ui_BitGuards
 
 #import resources.style as ss
 
-TITLE = 'GuardBits'
+TITLE = 'BitGuards'
 #LOGO = ":/images/logo.png"
 
 class GuardWindow(QMainWindow):
     """ Definition of a class """
     def __init__(self):
-        """ Initializes an object """
         QMainWindow.__init__(self)
-        #self.setupUi(self)
-        #self.setStyleSheet(ss.DEFAULT)
+        self.ui = Ui_BitGuards()
+        self.ui.setupUi(self) 
         self.init_ui()
 
     def init_ui(self):
-        self.setWindowTitle(TITLE)    	
+        self.setWindowTitle(TITLE)	
     
     def GMenu(self):
         pass
@@ -33,7 +35,6 @@ if __name__ == '__main__':
     import sys
 
     app = QApplication(sys.argv)
-    prep = GuardWindow()
-    prep.show()
+    window = GuardWindow()
+    window.show()
     app.exec_()
-# --- last line
