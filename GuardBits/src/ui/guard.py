@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'guard.ui'
+# Form implementation generated from reading ui file '/home/guillaume/Bureau/Project/GuardBits/GuardBits/GuardBits/src/ui/template/guard.ui'
 #
-# Created by: PyQt5 UI code generator 5.12.3
+# Created by: PyQt5 UI code generator 5.14.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -19,10 +19,8 @@ class Ui_BitGuards(object):
         BitGuards.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(BitGuards)
         self.centralwidget.setObjectName("centralwidget")
-        self.gridLayout_2 = QtWidgets.QGridLayout(self.centralwidget)
-        self.gridLayout_2.setObjectName("gridLayout_2")
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem, 6, 0, 1, 1)
+        self.centralLayout = QtWidgets.QGridLayout(self.centralwidget)
+        self.centralLayout.setObjectName("centralLayout")
         self.frame = QtWidgets.QFrame(self.centralwidget)
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -42,9 +40,9 @@ class Ui_BitGuards(object):
         self.pbMenu.setText("")
         self.pbMenu.setObjectName("pbMenu")
         self.gridLayout.addWidget(self.pbMenu, 0, 1, 1, 1)
-        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout.addItem(spacerItem1, 0, 2, 1, 1)
-        self.gridLayout_2.addWidget(self.frame, 0, 0, 1, 3)
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem, 0, 2, 1, 1)
+        self.centralLayout.addWidget(self.frame, 0, 0, 1, 1)
         self.frame_2 = QtWidgets.QFrame(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -57,16 +55,21 @@ class Ui_BitGuards(object):
         self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_2.setObjectName("frame_2")
-        self.gridLayout_2.addWidget(self.frame_2, 1, 0, 1, 3)
+        self.centralLayout.addWidget(self.frame_2, 1, 0, 1, 3)
         self.ListMenu = QtWidgets.QListView(self.centralwidget)
+        self.ListMenu.setMaximumSize(QtCore.QSize(200, 16777215))
         self.ListMenu.setObjectName("ListMenu")
-        self.gridLayout_2.addWidget(self.ListMenu, 2, 0, 1, 1)
+        self.centralLayout.addWidget(self.ListMenu, 2, 0, 1, 1)
         self.ListBits = QtWidgets.QListView(self.centralwidget)
         self.ListBits.setObjectName("ListBits")
-        self.gridLayout_2.addWidget(self.ListBits, 2, 1, 1, 2)
+        self.centralLayout.addWidget(self.ListBits, 2, 1, 1, 2)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.centralLayout.addItem(spacerItem1, 3, 0, 1, 1)
         self.pbAdd = QtWidgets.QPushButton(self.centralwidget)
         self.pbAdd.setObjectName("pbAdd")
-        self.gridLayout_2.addWidget(self.pbAdd, 6, 1, 1, 2)
+        self.centralLayout.addWidget(self.pbAdd, 3, 1, 1, 1)
+        spacerItem2 = QtWidgets.QSpacerItem(476, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.centralLayout.addItem(spacerItem2, 3, 2, 1, 1)
         BitGuards.setCentralWidget(self.centralwidget)
         self.statusBar = QtWidgets.QStatusBar(BitGuards)
         self.statusBar.setObjectName("statusBar")

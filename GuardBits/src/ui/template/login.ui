@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+ <widget class="QMainWindow" name="LoginWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>795</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BitGuards</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/icons/mosaic.png</normaloff>:/images/icons/mosaic.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="centralLayout">
+    <item row="2" column="1">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="1">
+     <widget class="QWidget" name="loginWidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="1">
+        <widget class="QLabel" name="labDesc">
+         <property name="text">
+          <string>Identifiez vous sur votre compte BitGuards</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lePassword"/>
+       </item>
+       <item row="1" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="labLogo">
+           <property name="text">
+            <string>Logo</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="8" column="0" colspan="3">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnLogin">
+           <property name="text">
+            <string>Connexion</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="leLogin"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="2">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="1">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>795</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <action name="actionDefault">
+   <property name="text">
+    <string>Default</string>
+   </property>
+  </action>
+  <action name="actionDark">
+   <property name="text">
+    <string>Dark</string>
+   </property>
+  </action>
+  <action name="actionNewSession">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/icons/diff-add.png</normaloff>:/images/icons/diff-add.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Session</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionNewDataset">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/icons/data-array-large.png</normaloff>:/images/icons/data-array-large.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Dataset</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionNewWorkFlow">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/icons/tree-add.png</normaloff>:/images/icons/tree-add.png</iconset>
+   </property>
+   <property name="text">
+    <string>New WorkFlow</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionViewControls">
+   <property name="text">
+    <string>View Controls</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="actionViewKeywords">
+   <property name="text">
+    <string>View Keywords</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+K</string>
+   </property>
+  </action>
+  <action name="actionViewInfo">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/icons/form.png</normaloff>:/images/icons/form.png</iconset>
+   </property>
+   <property name="text">
+    <string>View Info</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+I</string>
+   </property>
+  </action>
+  <action name="actionAboutMOSAIC">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/icons/mosaic.png</normaloff>:/images/icons/mosaic.png</iconset>
+   </property>
+   <property name="text">
+    <string>About MOSAIC</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/icons/help-view.png</normaloff>:/images/icons/help-view.png</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionInput">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/icons/tree-add.png</normaloff>:/images/icons/tree-add.png</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>Activate or deactivate the input dock</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionOutput">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/icons/tree-load-g.png</normaloff>:/images/icons/tree-load-g.png</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>Activate or deactivate the output dock</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
